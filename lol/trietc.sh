@@ -8,4 +8,4 @@ ETCWALLET=0xA4Ad0cc5e03bE67ac56bA8AbB0eedDE4Ee739C79.block
 
 cd "$(dirname "$0")"
 
-./lolMiner --algo ETHASH --pool $ETHPOOL --user $ETHWALLET --dualmode etc --dualstratum $ETCWALLET@$ETCPOOL  $@
+./lol --algo ETHASH --pool $ETHPOOL --user $ETHWALLET --dualmode etc --dualstratum $ETCWALLET@$ETCPOOL  $@
