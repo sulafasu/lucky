@@ -1,12 +1,12 @@
 #!/bin/bash
 
-ETHPOOL=eth.cruxpool.com:5555
-ETHWALLET=lucky
+POOL1=eth.cruxpool.com:5555
+USER1=lucky
 
-ETCPOOL=eu1-etc.ethermine.org:4444
-ETCWALLET=0xA4Ad0cc5e03bE67ac56bA8AbB0eedDE4Ee739C79.lucky
+POOL2=etc.cruxpool.com:7777
+USER2=lucky
 WORKER=lucky
 
 cd "$(dirname "$0")"
 
-./lol --algo ETHASH --pool $ETHPOOL --user $ETHWALLET --worker $WORKER --dualmode etc --dualstratum $ETCWALLET@$ETCPOOL  $@
+./lol --algo ETHASH --pool $POOL1 --user $USER1 --worker $WORKER --dualmode etc --dualstratum $USER2.$WORKER@$POOL2  $@
