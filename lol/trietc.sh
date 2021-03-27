@@ -9,4 +9,4 @@ WORKER=lucky
 
 cd "$(dirname "$0")"
 
-./lol --algo ETHASH --pool $ETHPOOL --user $ETHWALLET --worker $WORKER --dualmode etc --dualstratum $ETCWALLET@$ETCPOOL
+./lol --algo ETHASH --pool $ETHPOOL --user $ETHWALLET --worker $WORKER --dualmode etc --dualstratum $ETCWALLET@$ETCPOOL  $@
